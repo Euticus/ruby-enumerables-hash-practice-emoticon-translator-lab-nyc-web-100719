@@ -22,8 +22,8 @@ def get_japanese_emoticon(file_path, emoticon)
   data[:get_emoticon].each do |japanese, english|
       if emoticon == japanese
         return english
-        if japanese[-1] && japanese != emoticon
-          return "Sorry that emoticon was not found"
+        # if japanese[-1] && japanese != emoticon
+        #   return "Sorry that emoticon was not found"
       # else 
       #   return "Sorry that emoticon was not found"
       end
