@@ -20,8 +20,7 @@ def load_library(file_path)
 def get_japanese_emoticon(file_path, emoticon)
   data = load_library(file_path)
   data[:get_emoticon].each do |japanese, english|
-  if data[:get_emoticon][emoticon] && emoticon == japanese
-  
+  if data[:get_emoticon][emoticon] == true && emoticon == japanese
       #   binding.pry
         return english
        else 
