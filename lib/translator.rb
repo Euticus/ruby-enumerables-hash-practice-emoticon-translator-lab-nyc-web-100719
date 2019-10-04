@@ -22,7 +22,7 @@ def get_japanese_emoticon(file_path, emoticon)
   data[:get_emoticon].each do |japanese, english|
     binding.pry
   if data[:get_emoticon][emoticon] == true && emoticon == japanese
-       binding.pry
+      
         return english
        else 
          return "Sorry that emoticon was not found"
